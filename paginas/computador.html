@@ -23,13 +23,16 @@
             <li><a id="a-header" href="../paginas/maquina.html">MÁQUINA DE ESCREVER</a></li>
             <li><a id="a-header" href="../paginas/tv.html">TELEVISÃO</a></li>
             <li><a id="a-header" href="../paginas/computador.html">COMPUTADORES</a></li>
-            <li><a id="a-header" href="../paginas/sobre.html">SOBRE NÓS</a></li>
         </ul>
     </nav>
 </header>
 <body>
     <section id="principal">
-        <h1>Aba computadores</h1>
+        <div class="game-board">
+            <img src="../imagens/nuvens.png" class="clouds">
+            <img src="../imagens/mario.gif" class="mario">
+            <img src="../imagens/tubo-jogo.png" class="pipe">
+        </div>
     </section>
 </body>
 <script>
@@ -48,5 +51,30 @@
     }
     btnMobile.addEventListener('click', toggleMenu);
     btnMobile.addEventListener('touchstart', toggleMenu);
+
+    const mario = document.querySelector('.mario');
+    const pipe = document.querySelector('.pipe')
+    const jump = () => {
+        mario.classList.add('jump');
+        setTimeout(() => {
+            mario.classList.remove('jump');
+        }, 500);
+    }
+    const loop = setInterval(() => {
+        const pipePosition = pipe.offsetLeft;
+        const marioPosition = +window.getComputedStyle(mario).bottom.replace('px', '');
+        if (pipePosition <= 40 && pipePosition > 0 && marioPosition < 10) {
+            pipe.style.animation = 'none';
+            pipe.style.left = `${pipePosition}px`;
+            pipe.style.animation = 'none';
+            mario.style.bottom = `${pipePosition}px`;
+            mario.src = '../imagens/game-over.png';
+            mario.style.width = '40px'
+            mario.style.marginLeft = '50px'
+
+            clearInterval(loop);
+        }
+    }, 10)
+    document.addEventListener('keydown', jump);
 </script>
 </html>

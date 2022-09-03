@@ -23,18 +23,12 @@
             <li><a id="a-header" href="paginas/maquina.html">MÁQUINA DE ESCREVER</a></li>
             <li><a id="a-header" href="paginas/tv.html">TELEVISÃO</a></li>
             <li><a id="a-header" href="paginas/computador.html">COMPUTADORES</a></li>
-            <li><a id="a-header" href="paginas/sobre.html">SOBRE NÓS</a></li>
         </ul>
     </nav>
 </header>
 <body>
     <section id="principal">
         <h1 id="typing">Meios de Comunicação</h1>
-    <div class="game-board">
-        <img src="imagens/nuvens.png" class="clouds">
-        <img src="imagens/mario.gif" class="mario">
-        <img src="imagens/tubo-jogo.png" class="pipe">
-    </div>
     </section>
     <section id="fwh-slide">
         <h1>Sobre este projeto:</h1>
@@ -132,6 +126,11 @@
             </tr>
         </table>
     </section>
+    <section id="outro">
+        <img src="imagens/sala.png">
+        <h3>Sobre o 3°B</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quisquam illum vero aliquam labore ea quibusdam sapiente provident qui ducimus temporibus, deleniti ad molestiae cupiditate reiciendis natus. Quis, minima error!</p>
+    </section>
 </body>
 <script>
     const btnMobile = document.getElementById('btn-mobile');
@@ -149,30 +148,5 @@
     }
     btnMobile.addEventListener('click', toggleMenu);
     btnMobile.addEventListener('touchstart', toggleMenu);
-
-    const mario = document.querySelector('.mario');
-    const pipe = document.querySelector('.pipe')
-    const jump = () => {
-        mario.classList.add('jump');
-        setTimeout(() => {
-            mario.classList.remove('jump');
-        }, 500);
-    }
-    const loop = setInterval(() => {
-        const pipePosition = pipe.offsetLeft;
-        const marioPosition = +window.getComputedStyle(mario).bottom.replace('px', '');
-        if (pipePosition <= 40 && pipePosition > 0 && marioPosition < 10) {
-            pipe.style.animation = 'none';
-            pipe.style.left = `${pipePosition}px`;
-            pipe.style.animation = 'none';
-            mario.style.bottom = `${pipePosition}px`;
-            mario.src = 'imagens/game-over.png';
-            mario.style.width = '40px'
-            mario.style.marginLeft = '50px'
-
-            clearInterval(loop);
-        }
-    }, 10)
-    document.addEventListener('keydown', jump);
 </script>
 </html>

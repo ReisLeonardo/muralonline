@@ -14,85 +14,46 @@ body{
     background-size: cover; 
     position: relative;
 }
-h2 {
-    font-size: 10px;
-    top: 350px;
-    left: 70px;
-    position: relative;
-    color:yellow;
+
+#outro {
+    width:125%;
+    padding: 35px;
+    background: linear-gradient(#f7d831, #847314);
+    color: white;
 }
+
+#outro p{
+    font-size: 10px;
+}
+
+#outro img{
+    position: relative;
+    right: 30px;
+    padding: 20px;
+    width: 400px;
+    animation: fadeIn 10s ease-in-out;
+}
+@keyframes fadeIn{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fadeOut{
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+
 body, ul {
     margin: 0px;
     padding: 0px;
-}
-
-.game-board {
-    position: relative;
-    left: 100px;
-    top: 190px;
-    width: 60%;
-    height: 500px;
-    border-bottom: 15px solid green;
-    overflow: hidden;
-    background: linear-gradient(#87CEEB, #E0F6FF);
-}
-
-.clouds {
-    position: absolute;
-    width: 550px;
-    animation: clouds-animation 10s infinite linear;
-}
-
-@keyframes clouds-animation {
-    from {
-        right: -550px;
-    }
-    to {
-        right: 100%;
-    }
-}
-
-.pipe {
-    position: absolute;
-    bottom: 0;
-    width: 30px;
-    animation: pipe-animation 1.5s infinite linear;
-}
-
-.mario {
-    position: absolute;
-    width: 100px;
-    bottom: 0;
-}
-
-.jump {
-    animation: jump 500ms ease-out;
-}
-
-@keyframes pipe-animation {
-    from {
-        right: -40px;
-    }
-    to {
-        right: 100%
-    }
-} 
-@keyframes jump {
-    0% {
-        bottom: 0;
-    }
-    40%{
-        bottom: 80px;
-    }
-    50% {
-        bottom: 80px;
-    }
-    60% {
-        bottom: 80px;
-    }
-    100% {
-        bottom: 0;
-    }
 }
 
 #principal {
@@ -101,7 +62,7 @@ body, ul {
     box-sizing: border-box;
 }
 #fwh-slide {
-    width: 100%;
+    width: fit-content;
     background: #132677;
     color: white;
     padding: 35px;
@@ -229,7 +190,7 @@ ul li:hover::after{
     width: max-content;
     color: white;
     position: absolute;
-    top: 200px;
+    top: 400px;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;

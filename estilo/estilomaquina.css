@@ -20,6 +20,96 @@ body, ul {
     padding: 0px;
 }
 
+h1 {
+    position: relative;
+    top:300px;
+    color: white;
+}
+
+#slide-1 {
+    position: relative;
+    top: 550px;
+    background: #3b4afa;
+    width: 100%;
+}
+#slide-1 p {
+    margin: 70px;
+    color: black;
+}
+#slide-1 img {
+    bottom: 50px;
+    left: 100px;
+    position: relative;
+    width: 300px;
+
+}
+#slide-2 {
+    position: relative;
+    top: 510px;
+    background: #303dcc;
+    width: 100%;
+}
+#slide-2 img {
+    width: 200px;
+    position: relative;
+    left: 100px;
+}
+#slide-2 p {
+    margin: 70px;
+    color: black;
+}
+#slide-3 {
+    position: relative;
+    top: 475px;
+    background: #262f99;
+    width: 100%;
+}
+#slide-3 p {
+    margin: 70px;
+    color: black;
+}
+#slide-4 {
+    position: relative;
+    top: 440px;
+    background: #1a2065;
+    width: 100%;
+}
+#slide-4 p {
+    padding: 25px;
+    margin: 60px;
+    color: black;
+}
+#video {
+    width: 350px;
+    position: relative;
+    left: 60px;
+    top: -30px;
+}
+h2 {
+    padding: 10px;
+    margin: 35px;
+    font-size: 30px;
+    color: white;
+}
+h3 {
+    padding: 10px;
+    margin: 35px;
+    font-size: 30px;
+    color: white;
+}
+h4 {
+    padding: 10px;
+    margin: 35px;
+    font-size: 30px;
+    color: white;
+}
+h5 {
+    padding: 10px;
+    margin: 35px;
+    font-size: 30px;
+    color: white;
+}
+
 #a-header {
     color: white;
     text-decoration: none;
@@ -133,8 +223,4 @@ ul li:hover::after{
         transform: rotate(-135deg);
         top: -7px;
     }
-}
-
-h1 {
-    color: white;
 }
