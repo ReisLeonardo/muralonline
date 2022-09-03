@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máquina de escrever</title>
+    <link rel="stylesheet" href="../estilo/estilomaquina.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../imagens/advlogo.png"/>
+</head>
+<header id="header">
+    <img id="logo" src="../imagens/advlogo.png">
+    <nav id="nav">
+        <button aria-label="Abrir menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+            <span id="linhas"></span>
+        </button>
+        <ul id="menu" role="menu">
+            <li><a id="a-header" href="../principal.html">SAGUÃO</a></li>
+            <li><a id="a-header" href="../paginas/maquina.html">MÁQUINA DE ESCREVER</a></li>
+            <li><a id="a-header" href="../paginas/tv.html">TELEVISÃO</a></li>
+            <li><a id="a-header" href="../paginas/computador.html">COMPUTADORES</a></li>
+            <li><a id="a-header" href="../paginas/sobre.html">SOBRE NÓS</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <section id="principal">
+        <h1>Aba máquina de escrever</h1>
+    </section>
+    <section></section>
+</body>
+<script>
+    const btnMobile = document.getElementById('btn-mobile');
+    function toggleMenu(event) {
+        if (event.type === 'touchstart') event.preventDefault()
+        const nav = document.getElementById('nav');
+        nav.classList.toggle('active');
+        const active = nav.classList.contains('active');
+        event.currentTarget.setAttribute('aria-expanded', active);
+        if (active) {
+        event.currentTarget.setAttribute('aria-label', 'Fechar menu');
+        } else {
+            event.currentTarget.setAttribute('aria-label', 'Abrir menu'); 
+        }
+    }
+    btnMobile.addEventListener('click', toggleMenu);
+    btnMobile.addEventListener('touchstart', toggleMenu);
+</script>
+</html>

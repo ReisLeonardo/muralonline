@@ -1,0 +1,285 @@
+/* Este "*" são configuras base para toda a página 
+- A família da fonte está em estilo pixelado
+- A fonte pertence ao Google fonts*/
+* {
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Silkscreen', cursive;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    background-color: gray;
+    background-position: center;
+    background-size: cover; 
+    position: relative;
+}
+h2 {
+    font-size: 10px;
+    top: 350px;
+    left: 70px;
+    position: relative;
+    color:yellow;
+}
+body, ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.game-board {
+    position: relative;
+    left: 100px;
+    top: 350px;
+    width: 60%;
+    height: 500px;
+    border-bottom: 15px solid green;
+    overflow: hidden;
+    background: linear-gradient(#87CEEB, #E0F6FF);
+}
+
+.clouds {
+    position: absolute;
+    width: 550px;
+    animation: clouds-animation 10s infinite linear;
+}
+
+@keyframes clouds-animation {
+    from {
+        right: -550px;
+    }
+    to {
+        right: 100%;
+    }
+}
+
+.pipe {
+    position: absolute;
+    bottom: 0;
+    width: 30px;
+    animation: pipe-animation 1.5s infinite linear;
+}
+
+.mario {
+    position: absolute;
+    width: 100px;
+    bottom: 0;
+}
+
+.jump {
+    animation: jump 500ms ease-out;
+}
+
+@keyframes pipe-animation {
+    from {
+        right: -40px;
+    }
+    to {
+        right: 100%
+    }
+} 
+@keyframes jump {
+    0% {
+        bottom: 0;
+    }
+    40%{
+        bottom: 80px;
+    }
+    50% {
+        bottom: 80px;
+    }
+    60% {
+        bottom: 80px;
+    }
+    100% {
+        bottom: 0;
+    }
+}
+
+#principal {
+    height: 100vh;
+    background: gray;
+    box-sizing: border-box;
+}
+#fwh-slide {
+    width: 100%;
+    background: #132677;
+    color: white;
+    padding: 35px;
+}
+
+a {
+    color: #b00000;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Silkscreen', cursive;
+}
+
+#a-header {
+    color: white;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Silkscreen', cursive;
+}
+
+ul li::after{
+    content: "";
+    width: 5%;
+    height: 2px;
+    background: rgb(255,255,0);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+ul li:hover::after{
+    width: 100%;
+}
+
+#logo {
+    width: 60px;
+}
+
+#header {
+    box-sizing: border-box;
+    height: 70px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #004C99;
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+    gap: .5rem;
+}
+
+#menu a {
+    display: block;
+    padding: .5rem;
+}
+
+#btn-mobile {
+    color: white;
+    display: none;
+}
+
+@media (max-width: 600px) {
+    #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0;
+        background: #0066CC;
+        transition: .6s;
+        z-index: 1000;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+    #nav.active #menu {
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+    #menu a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(0, 0, 0, .05);
+    }
+    #btn-mobile {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+    }
+    #linhas {
+        display: block;
+        border-top: 2px solid;
+        width: 20px;
+    }
+    #linhas::after, #linhas::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+    #nav.active #linhas {
+        border-top-color: transparent;
+    }
+    #nav.active #linhas::before {
+        transform: rotate(135deg);
+    }
+    #nav.active #linhas::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+}
+
+#typing {
+    width: max-content;
+    color: white;
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10;
+    
+}
+
+#typing::before,
+#typing::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+#typing::before {
+    background: gray;
+    animation: typewriter 2s steps(20) forwards;
+}
+#typing::after {
+    width: 0.125em;
+    background: black;
+    animation: typewriter 2s steps(20) forwards, blink 500ms steps(20) infinite;
+}
+
+@keyframes typewriter {
+    to { 
+        left: 100%;
+    }
+}
+
+@keyframes blink {
+    to {
+        background: transparent;
+
+    }
+}
+
+table {
+    color: black;
+}
+/*.caixa-de-texto h1{
+    font-size: 30px;
+}
+
+.caixa-de-texto p{
+    margin: 10px 0 40px;
+    font-size: 10px;
+    color: white;
+}

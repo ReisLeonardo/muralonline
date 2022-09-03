@@ -1,0 +1,140 @@
+/* Este "*" são configuras base para toda a página 
+- A família da fonte está em estilo pixelado
+- A fonte pertence ao Google fonts*/
+* {
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Silkscreen', cursive;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(../imagens/computador.jpg);
+    background-position: center;
+    background-size: cover; 
+    position: relative;
+}
+
+body, ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+#a-header {
+    color: white;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Silkscreen', cursive;
+}
+
+#a-header:hover {
+    background: #cccc00;
+}
+
+ul li::after{
+    content: "";
+    width: 5%;
+    height: 2px;
+    background: rgb(255,255,0);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+ul li:hover::after{
+    width: 100%;
+}
+
+#logo {
+    width: 50px;
+}
+
+#header {
+    box-sizing: border-box;
+    height: 70px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #004C99;
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+    gap: .5rem;
+}
+
+#menu a {
+    display: block;
+    padding: .5rem;
+}
+
+#btn-mobile {
+    color: white;
+    display: none;
+}
+
+@media (max-width: 600px) {
+    #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0;
+        background: #0066CC;
+        transition: .6s;
+        z-index: 1000;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+    #nav.active #menu {
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+    #menu a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(0, 0, 0, .05);
+    }
+    #btn-mobile {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+    }
+    #linhas {
+        display: block;
+        border-top: 2px solid;
+        width: 20px;
+    }
+    #linhas::after, #linhas::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+    #nav.active #linhas {
+        border-top-color: transparent;
+    }
+    #nav.active #linhas::before {
+        transform: rotate(135deg);
+    }
+    #nav.active #linhas::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+}
+
+h1 {
+    color: white;
+}
