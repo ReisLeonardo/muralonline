@@ -20,10 +20,61 @@ body, ul {
     padding: 0px;
 }
 
+#text {
+    position: relative;
+    margin: 10px;
+    color: white;
+}
+
+#slides {
+    border: 3px solid yellow;
+    color: white;
+    position: relative;
+    top: 105px;
+    background: yellow;
+}
+
+#a {
+    padding: 10px;
+    background-color: #4453ff;
+}
+#a img {
+    width: 100%;
+}
+
+#b {
+    padding: 10px;
+    background-color: #3440ce;
+}
+
+#c {
+    padding: 10px;
+    background-color: #27309d;
+}
+
+#c img {
+    position: relative;
+    top: -50px;
+}
+
+#c p {
+    position: relative;
+    top: -50px;
+}
+#d {
+    padding: 10px;
+    background-color: #1d2479;
+}
+
+#e {
+    padding: 10px;
+    background-color: #171c5f;
+}
+
 .game-board {
     position: relative;
     left: 100px;
-    top: 80px;
+    top: 20px;
     width: 60%;
     height: 500px;
     border-bottom: 15px solid green;
@@ -202,8 +253,4 @@ ul li:hover::after{
         transform: rotate(-135deg);
         top: -7px;
     }
-}
-
-h1 {
-    color: white;
 }
