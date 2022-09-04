@@ -21,39 +21,37 @@ body, ul {
 
 h1 {
     position: relative;
-    margin: 10px;
-    bottom:700px;
+    top: 80px;
     color: white;
 }
 
 #image {
-    top: 250px;
-    position: relative;
-    width: 1500px;
+    top: 130px;
+    position: fixed;
+    width: 950px;
     left: 10px;
-    background-image: cover;
 }
 
 #slide-1 {
     position: relative;
-    top: 550px;
+    top: 700px;
     background: #3b4afa;
     width: 100%;
 }
 #slide-1 p {
-    margin: 70px;
+    margin: 30px;
     color: black;
 }
 #slide-1 img {
-    bottom: 50px;
-    left: 100px;
+    bottom: 20px;
+    left: 50px;
     position: relative;
     width: 300px;
 
 }
 #slide-2 {
     position: relative;
-    top: 510px;
+    top: 680px;
     background: #303dcc;
     width: 100%;
 }
@@ -63,24 +61,22 @@ h1 {
     left: 100px;
 }
 #slide-2 p {
-    margin: 70px;
-    left: 70px;
+    margin: 30px;
     color: black;
 }
 #slide-3 {
     position: relative;
-    top: 475px;
+    top: 650px;
     background: #262f99;
     width: 100%;
 }
 #slide-3 p {
-
-    margin: 70px;
+    margin: 30px;
     color: black;
 }
 #slide-4 {
     position: relative;
-    top: 440px;
+    top: 550px;
     background: #1a2065;
     width: 100%;
 }
@@ -92,30 +88,26 @@ h1 {
 #video {
     width: 350px;
     position: relative;
-    margin: 60px;
-    top: -30px;
+    margin: 30px;
+    top: -50px;
 }
 h2 {
-    padding: 10px;
-    margin: 35px;
+    margin: 20px;
     font-size: 30px;
     color: white;
 }
 h3 {
-    padding: 10px;
-    margin: 35px;
+    margin: 20px;
     font-size: 30px;
     color: white;
 }
 h4 {
-    padding: 10px;
-    margin: 35px;
+    margin: 20px;
     font-size: 30px;
     color: white;
 }
 h5 {
-    padding: 10px;
-    margin: 35px;
+    margin: 20px;
     font-size: 30px;
     color: white;
 }
