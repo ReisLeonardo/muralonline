@@ -18,18 +18,19 @@ body{
 #outro {
     width:fit-content;
     padding: 35px;
+    font-size: 25px;
     background: linear-gradient(#f7d831, #847314);
     color: white;
 }
 
 #outro p{
-    font-size: 10px;
+    font-size: 15px;
 }
 
 #outro img{
     position: relative;
     right: 30px;
-    padding: 20px;
+    padding: 35px;
     width: 400px;
     animation: fadeIn 10s ease-in-out;
 }

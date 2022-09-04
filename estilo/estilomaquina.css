@@ -22,7 +22,8 @@ body, ul {
 
 h1 {
     position: relative;
-    top:300px;
+    top:200px;
+    left: 50px;
     color: white;
 }
 
