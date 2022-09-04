@@ -20,10 +20,43 @@ body, ul {
     padding: 0px;
 }
 
-h1 {
+#slide {
+    padding: 10px;
     position: relative;
-    margin: 30px;
-    top:200px;
+    top: 600px;
+    background-color: #3b4afa;
+    color: white;
+}
+
+#slide-2 {
+    padding: 10px;
+    position: relative;
+    top: 580px;
+    background-color: #303dcc;
+    color: white;
+}
+
+#slide-3 {
+    padding: 10px;
+    position: relative;
+    top: 560px;
+    background-color: #262f99;
+    color: white;
+}
+
+#slide-4 {
+    padding: 10px;
+    top: 560px;
+    position: relative;
+    background-color: #1a2065;
+    color: white;
+}
+
+#slide-5 {
+    padding: 10px;
+    top: 560px;
+    position: relative;
+    background-color: #151a4e;
     color: white;
 }
 

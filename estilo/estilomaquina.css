@@ -40,7 +40,7 @@ h1 {
 }
 #slide-1 p {
     margin: 30px;
-    color: black;
+    color: white;
 }
 #slide-1 img {
     bottom: 20px;
@@ -62,7 +62,7 @@ h1 {
 }
 #slide-2 p {
     margin: 30px;
-    color: black;
+    color: white;
 }
 #slide-3 {
     position: relative;
@@ -72,7 +72,7 @@ h1 {
 }
 #slide-3 p {
     margin: 30px;
-    color: black;
+    color: white;
 }
 #slide-4 {
     position: relative;
@@ -83,7 +83,7 @@ h1 {
 #slide-4 p {
     padding: 25px;
     margin: 60px;
-    color: black;
+    color: white;
 }
 #video {
     width: 350px;
