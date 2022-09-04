@@ -28,6 +28,19 @@ body, ul {
     color: white;
 }
 
+#principal h1 {
+    position: relative;
+    top: 80px;
+    color: white;
+}
+
+#image {
+    top: 130px;
+    position: fixed;
+    width: 270px;
+    left: 10px;
+}
+
 #slide-2 {
     padding: 10px;
     position: relative;
