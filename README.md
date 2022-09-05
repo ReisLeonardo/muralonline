@@ -1,5 +1,5 @@
 # O que é o mural digital?
-É um projeto interdisciplinar proposto pela professora (:teacher:) **Cintia (filosofia)** a fim de produzir algo criativo envolvendo tecnologias. O mural pode ser visualizado no penúltimo andar do colégio ou de forma digital, acesse: https://reisleonardo.github.io/muralonline/principal.html . Todas as matérias estão envolvidas, O peso de cada uma está descrito abaixo:
+É um projeto interdisciplinar proposto pela professora (:teacher:) **Cintia (filosofia)** a fim de produzir algo criativo envolvendo tecnologias. O mural pode ser visualizado no penúltimo andar do colégio ou de forma digital, acesse: https://reisleonardo.github.io/muralonline/principal.html. Todas as matérias estão envolvidas, O peso de cada uma está descrito abaixo:
 
 Disciplina | Pontuação
 --- | ---
