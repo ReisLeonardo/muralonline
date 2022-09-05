@@ -31,7 +31,7 @@ body, ul {
     color: white;
     position: relative;
     top: 105px;
-    background: yellow;
+    background: gray;
 }
 
 #a {
@@ -253,4 +253,8 @@ ul li:hover::after{
         transform: rotate(-135deg);
         top: -7px;
     }
+}
+
+table {
+    color: black;
 }

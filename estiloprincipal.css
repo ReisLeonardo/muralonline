@@ -69,6 +69,12 @@ body, ul {
     padding: 35px;
 }
 
+#a-lang {
+    list-style-type: none;
+    position: relative;
+    right: 5px;
+}
+
 a {
     color: #b00000;
     text-decoration: none;
@@ -235,13 +241,4 @@ ul li:hover::after{
 
 table {
     color: black;
-}
-/*.caixa-de-texto h1{
-    font-size: 30px;
-}
-
-.caixa-de-texto p{
-    margin: 10px 0 40px;
-    font-size: 10px;
-    color: white;
 }
